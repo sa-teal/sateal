@@ -1,0 +1,74 @@
+@use "main"
+//VARIABLES
+$gap--header: 5rem
+//GENERAL
+body
+  $gap--body: .7rem
+  padding:
+    left: $gap--body
+    right: $gap--body+1
+
+//HEADER
+.header
+  height: $gap--header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  box-sizing: border-box
+  background: main.$color__fondo
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .nav
+    position: fixed
+    inset: 0
+    background: main.$color__fondo
+    top: $gap--header
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateX(-100vw)
+    transition: .5s
+    &--show
+      transform: translateX(0vw)
+    &__ul
+      list-style: none
+      padding: 0
+      text-align: center
+    &__link
+      display: block
+      text-decoration: none
+      color: main.$color__texto
+      font-size: main.$gap--l
+      padding: main.$gap--m
+  &__brand-link
+    width: 10rem
+  &__button
+    width: 2rem
+    padding: 0
+    .image
+      height: 100%
+
+//HERO
+.hero
+  padding-top: $gap--header
+  &__image-wrap
+    background: main.$color__principal
+    aspect-ratio: 1
+    border-radius: 10000px
+    overflow: hidden
+
+//PORTFOLIO
+.portfolio
+  background-color: main.$color__fondo
+  padding:
+    top: main.$gap--m
+    bottom: main.$gap--m
+  .container
+    gap: main.$gap--l
+
+.proyecto
+  &__image-wrap
+    height: 200px

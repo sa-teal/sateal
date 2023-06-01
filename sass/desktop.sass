@@ -1,0 +1,85 @@
+@use "main"
+//VARIABLES
+$header__height: 6rem
+
+//HEADER
+.header
+  position: fixed
+  background: main.$color__fondo
+  top: 0
+  left: 0
+  right: 0
+  .container
+    height: $header__height
+    padding: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__brand-link
+    width: 10rem
+  &__button
+    display: none
+  .nav
+    &__ul
+      display: flex
+      list-style: none
+    &__link
+      text-decoration: none
+      color: main.$color__texto
+      display: inline-block
+      padding: main.$gap--m
+      transition: .2s
+      &:hover
+        color: lighten(main.$color__texto, 50%)
+        border-bottom: 1px solid lighten(main.$color__texto, 50%)
+
+//HERO
+.hero
+  padding-top: $header__height+2rem
+  .container
+    display: flex
+    gap: main.$gap--xl
+    flex: 1
+    align-items: center
+  &__image-wrap
+    background: main.$color__principal
+    aspect-ratio: 1
+    border-radius: 10000px
+    height: 400px
+    overflow: hidden
+  &__title
+    font-size: main.$gap--xl
+  &__text
+    font-size: 1.4rem
+
+
+
+//ABOUT
+
+
+
+//PORTFOLIO
+.portfolio
+  background-color: main.$color__fondo
+  padding:
+    top: main.$gap--m
+    bottom: main.$gap--m
+  .container
+    display: flex
+    gap: main.$gap--l
+
+.proyecto
+  text-align: center
+  align-items: center
+  flex: 1
+
+
+//CONTACTA
+
+
+
+
+
+
+
+

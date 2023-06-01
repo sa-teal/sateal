@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Sara Tebar | Portfolio</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-touch-icon/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png">
+        <!-- Colores navegador -->
+        <meta name="theme-color" content="#3c790a">
+        <meta name="theme-color"
+              content="#ecd96f"
+              media="(prefers-color-scheme: light)"> <!-- para temas claros -->
+        <meta name="theme-color"
+              content="#0b3e05"
+              media="(prefers-color-scheme: dark)"> <!-- para temas oscuros -->
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Datos web -->
+        <meta name="author" content="Sara Tébar (sateal)">
+        <meta name="keywords" content="html, css, javascript">
+        <meta name="description" content="Portfolio personal">
+        <!-- Compartir - Redes Sociales -->
+        <meta property="og:image" content="img/miniatura.png">
+        <meta property="og:title" content="The Rock">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.imdb.com/title/tt0117500/">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@sa__teal">
+        <meta name="twitter:creator" content="@sa__teal">
+        <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="400">
+        <meta property="og:image:height" content="300">
+        <meta property="og:image:alt" content="A shiny red apple with a bite taken out">
+        <!-- Estilos y Normalize -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- Split media -->
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" media="all and (max-width: 600px)">
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" media="all and (min-width: 600px)">
+        <!-- alpine -->
+        <script src="https://unpkg.com/alpinejs" defer></script>
+    </head>
+    <body>
+        <header class="header"  x-data="{ open: false }">
+            <div class="container">
+                <a href="" class="header__brand-link">
+                    <img class="image header__brand" src="img/logo.png" alt="sa.teal">
+                </a>
+                <nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
+                    <ul class="nav__ul">
+                        <li class="nav__li">
+                            <a href="" class="nav__link">Inicio</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="" class="nav__link">Sobre mi</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="" class="nav__link">Contacta</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="menu header__button" aria-hidden="true" @click="open = ! open">
+                    <img
+                            class="image"
+                            :src="open ? 'img/close.png' : 'img/menu.png'"
+                            alt="boton para mostrar u ocultar el menu"
+                    >
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__col1">
+                        <div class="hero__image-wrap">
+                            <img src="img/me-pic.png" alt="" class="image hero__image">
+                        </div>
+                    </div>
+                    <div class="hero__col2">
+                        <h1 class="hero__title">Sara Tébar</h1>
+                        <p class="hero__text">Con una sólida experiencia en diseño y una mentalidad analítica, he reconducido mi carrera profesional hacia la creación de soluciones digitales. Mi capacidad para fusionar la creatividad con la funcionalidad me resulta clave a la hora de buscar soluciones prácticas. </p>
+                        <p class="hero__text">¡Espero que te guste mi portfolio!</p>
+                    </div>
+                </div>
+            </section>
+            <!--<section class="about" id="about">
+                <h2 class="section__title">Sobre mi</h2>
+                <div class="container">
+                    <div class="about__col1">
+
+                    </div>
+                    <div class="about__col2">
+
+                    </div>
+                </div>  TO-DO -->
+            </section>
+            <section class="portfolio" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <div class="container">
+                    <article class="proyecto">
+                        <div class="proyecto__image-wrap">
+                            <a href="https://sa-teal.github.io/monkymail/"><img src="img/leafscape-2.png" alt="" class="image proyecto__image"></a>
+                        </div>
+                        <p><a href="https://sa-teal.github.io/monkymail/" class="button proyecto__button">Ver proyecto</a></p>
+                    </article>
+                    <article class="proyecto">
+                        <div class="proyecto__image-wrap">
+                            <a href="https://sa-teal.github.io/web-rescates/"><img src="img/leafscape-2.png" alt="" class="image proyecto__image"></a>
+                        </div>
+                        <p><a href="https://sa-teal.github.io/web-rescates/" class="button proyecto__button">Ver proyecto</a></p>
+                    </article>
+                    <article class="proyecto">
+                        <div class="proyecto__image-wrap">
+                            <a href="https://buttondown.email/sateal/archive/hola/"><img src="img/leafscape-2.png" alt="" class="image proyecto__image"></a>
+                        </div>
+                        <p><a href="https://buttondown.email/sateal/archive/hola/" class="button proyecto__button">Ver proyecto</a></p>
+                    </article>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__copyright">©2023 sa.teal</p>
+            </div>
+        </footer>
+    </body>
+</html>

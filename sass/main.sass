@@ -1,0 +1,91 @@
+// COLORES
+$color__principal: #0007CC
+$color__secundario: #FC5130
+$color__texto: black
+$color__fondo: white
+
+//MEDIDAS
+$gap--xs: .4rem
+$gap--s: .8rem
+$gap--m: 1rem
+$gap--l: 2rem
+$gap--xl: 3rem
+
+//TIPOGRAFIAS
+
+
+
+//COMPONENTES
+.image
+  width: 100%
+  object-fit: cover
+
+.menu
+  border: none
+  background: transparent
+
+.container
+  margin: 0 auto
+  max-width: 1080px
+  padding: 1rem
+
+.button
+  display: block
+  background-color: $color__fondo
+  border: 2px solid $color__principal
+  box-sizing: border-box
+  border-radius: $gap--xs
+  color: $color__principal
+  text-align: center
+  text-decoration: none
+  font-size: 1.2rem
+  font-weight: bold
+  padding:
+    top: $gap--s
+    bottom: $gap--s
+    left: $gap--l
+    right: $gap--l
+  transition: .3s
+  &:hover
+    color: white
+    background: $color__principal
+
+
+//GENERAL
+body
+  padding: 0
+
+.section__title
+  text-align: center
+  font-size: $gap--l
+
+//HOME
+
+////ABOUT
+
+
+//PORTFOLIO
+.proyecto
+  &__image-wrap
+    background: white
+    border-radius: $gap--xs
+    overflow: hidden
+    height: 200px
+    border: 1px solid lightgray
+    cursor: pointer
+    transition: .3s
+    &:hover
+      box-shadow: 0 0 17.9px rgba(0, 0, 0, 0.172)
+
+
+//FOOTER
+.footer
+  background: $color__principal
+  color: white
+  margin-top: $gap--xl
+
+
+
+
+
+
