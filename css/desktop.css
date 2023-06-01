@@ -52,6 +52,14 @@ body {
   font-size: 2rem;
 }
 
+.hero__image-wrap {
+  background: #0007CC;
+  aspect-ratio: 1;
+  border-radius: 10000px;
+  height: 400px;
+  overflow: hidden;
+}
+
 .proyecto__image-wrap {
   background: white;
   border-radius: 0.4rem;
@@ -134,11 +142,7 @@ body {
           align-items: center;
 }
 .hero__image-wrap {
-  background: #0007CC;
-  aspect-ratio: 1;
-  border-radius: 10000px;
   height: 400px;
-  overflow: hidden;
 }
 .hero__title {
   font-size: 3rem;
