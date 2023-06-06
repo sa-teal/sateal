@@ -57,7 +57,6 @@ body {
   background: #0007CC;
   aspect-ratio: 1;
   border-radius: 10000px;
-  height: 400px;
   overflow: hidden;
 }
 
@@ -150,6 +149,9 @@ body {
 }
 .hero__text {
   font-size: 1.4rem;
+}
+.hero__image-wrap {
+  height: 400px;
 }
 
 .portfolio {
