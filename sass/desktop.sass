@@ -2,6 +2,9 @@
 //VARIABLES
 $header__height: 6rem
 
+
+//GENERAL
+
 //HEADER
 .header
   position: fixed
@@ -9,6 +12,15 @@ $header__height: 6rem
   top: 0
   left: 0
   right: 0
+  &::before
+    content: ""
+    box-shadow: 0 2px 5px lightgray
+    mix-blend-mode: multiply
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
   .container
     height: $header__height
     padding: 0
@@ -35,7 +47,10 @@ $header__height: 6rem
 
 //HERO
 .hero
+  display: flex
+  align-items: center
   padding-top: $header__height+2rem
+  min-height: 40vh
   .container
     display: flex
     gap: main.$gap--xl
@@ -58,6 +73,10 @@ $header__height: 6rem
 
 //PORTFOLIO
 .portfolio
+  min-height: 40vh
+  display: flex
+  flex-direction: column
+  align-items: center
   background-color: main.$color__fondo
   padding:
     top: main.$gap--m
@@ -74,6 +93,9 @@ $header__height: 6rem
 
 //CONTACTA
 
+//FOOTER
+.footer
+  min-height: 10vh
 
 
 
