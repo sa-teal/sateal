@@ -546,7 +546,6 @@ body {
           flex: 1;
 }
 .proyecto__image-wrap {
-  background: white;
   border-radius: 0.4rem;
   overflow: hidden;
   height: 200px;
@@ -555,7 +554,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.proyecto:hover {
+.proyecto__image-wrap:hover {
   -webkit-box-shadow: 0 0 17.9px rgba(0, 0, 0, 0.172);
           box-shadow: 0 0 17.9px rgba(0, 0, 0, 0.172);
 }
