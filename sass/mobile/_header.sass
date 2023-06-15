@@ -1,0 +1,44 @@
+@use "variables"
+
+.header
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  background: variables.$color__fondo
+  box-shadow: 0 0 5px variables.$color__shadow
+  & > .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem
+  .nav
+    position: fixed
+    inset: 0
+    background: variables.$color__fondo
+    top: variables.$header__height
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateX(-100vw)
+    transition: .5s
+    &--show
+      transform: translateX(0vw)
+    &__ul
+      list-style: none
+      padding: 0
+      text-align: center
+    &__link
+      display: block
+      text-decoration: none
+      color: variables.$color__texto
+      font-size: variables.$gap--l
+      padding: variables.$gap--m
+  &__logo
+    width: 10rem
+  &__button
+    display: none
+    width: 2rem
+    padding: 0
+    .image
+      height: 100%

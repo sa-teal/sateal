@@ -1,0 +1,38 @@
+@use "variables"
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: variables.$color__fondo
+  box-shadow: 0 0 5px variables.$color__shadow
+  z-index: 9999
+  & > .container
+    display: flex
+    justify-content: space-between
+    gap: variables.$gap--m
+    align-items: center
+  &__logo
+    max-width: 10rem
+    padding: variables.$gap--m //quitar cuando active nav
+  &__button
+    display: none
+  .nav
+    display: none
+    &__ul
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      padding: 0
+    &__link
+      display: inline-block
+      text-decoration: none
+      width: max-content
+      box-sizing: border-box
+      padding: variables.$gap--m
+      color: variables.$color__texto
+      transition: .2s
+      &:hover
+        color: lighten(variables.$color__texto, 50%)
+        border-bottom: 1px solid lighten(variables.$color__texto, 50%)

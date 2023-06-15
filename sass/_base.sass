@@ -1,0 +1,48 @@
+@use "variables"
+
+//GENERAL
+body
+  padding: 0
+
+//COMPONENTES
+.image
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+.menu
+  border: none
+  background: transparent
+
+.container
+  margin-inline: auto
+  max-width: 62rem
+  padding: 0 1rem
+
+.ul-reset
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding: 0
+
+.button
+  display: block
+  background-color: variables.$color__fondo
+  border: 2px solid variables.$color__principal
+  box-sizing: border-box
+  border-radius: variables.$gap--xs
+  color: variables.$color__principal
+  text-align: center
+  text-decoration: none
+  font-size: 1.2rem
+  font-weight: bold
+  padding:
+    top: variables.$gap--s
+    bottom: variables.$gap--s
+    left: variables.$gap--l
+    right: variables.$gap--l
+  transition: .3s
+  &:hover
+    color: variables.$color__fondo
+    background: variables.$color__principal

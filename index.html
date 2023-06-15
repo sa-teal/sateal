@@ -45,8 +45,8 @@
     <body>
         <header class="header"  x-data="{ open: false }">
             <div class="container">
-                <a href="#" class="header__brand-link">
-                    <img class="image header__brand" src="img/logo.png" alt="sa.teal">
+                <a class="link header__link" href="">
+                    <img src="img/logo.png" alt="" class="image header__logo">
                 </a>
                 <nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
                     <ul class="nav__ul">
@@ -76,10 +76,8 @@
         <main class="main">
             <section class="hero">
                 <div class="container">
-                    <div class="hero__col1">
-                        <div class="hero__image-wrap">
-                            <img src="img/me-pic.png" alt="" class="image hero__image">
-                        </div>
+                    <div class="hero__image-wrap">
+                        <img src="img/me-pic.png" alt="" class="image hero__image">
                     </div>
                     <div class="hero__col2">
                         <h1 class="hero__title">Sara Tébar</h1>

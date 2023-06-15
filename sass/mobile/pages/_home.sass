@@ -1,0 +1,39 @@
+@use "variables"
+
+//HERO
+.hero
+  padding-top: variables.$header__height
+  & > .container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__image-wrap
+    max-width: 80vw
+    aspect-ratio: 1
+    background: variables.$color__principal
+    border-radius: 50%
+    overflow: hidden
+
+//PORTFOLIO
+.portfolio
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: variables.$color__fondo
+  padding:
+    top: variables.$gap--m
+    bottom: variables.$gap--m
+  & > .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: variables.$gap--xl
+
+.proyecto
+  &__image-wrap
+    border-radius: variables.$gap--xs
+    overflow: hidden
+    height: 200px
+    border: 1px solid lightgray
+    cursor: pointer
+    transition: .3s
