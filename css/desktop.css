@@ -342,7 +342,7 @@ body {
 .container {
   margin-inline: auto;
   max-width: 62rem;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .ul-reset {
@@ -353,6 +353,7 @@ body {
       flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  gap: 0.8rem;
 }
 
 .button {

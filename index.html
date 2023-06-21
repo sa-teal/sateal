@@ -48,8 +48,8 @@
                 <a class="link header__link" href="">
                     <img src="img/logo.png" alt="" class="image header__logo">
                 </a>
-                <nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
-                    <ul class="nav__ul">
+                <!--<nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
+                    <ul class="ul-reset nav__ul">
                         <li class="nav__li">
                             <a href="#" class="nav__link">Inicio</a>
                         </li>
@@ -59,7 +59,7 @@
                         <li class="nav__li">
                             <a href="#portfolio" class="nav__link">Portfolio</a>
                         </li>
-                        <!--<li class="nav__li">
+                        <li class="nav__li">
                             <a href="" class="nav__link">Contacta</a>
                         </li> TO-DO FORM -->
                     </ul>
@@ -139,7 +139,18 @@
         <footer class="footer">
             <div class="container">
                 <p class="footer__copyright">©2023 sa.teal</p>
-                <a href="" class="footer__github-link"><img src="img/github.svg" alt="GitHub logo" class="image footer__icon"></a>
+                <nav class="nav">
+                    <ul class="ul-reset nav__ul">
+                        <li class="nav__li">
+                            <a href="https://www.linkedin.com/in/sara-tebar-albir/" class="nav__link footer__linkedin-link"><img src="img/linkedin.svg" alt="Linkedin logo" class="image footer__icon"></a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="https://github.com/sa-teal" class="nav__link footer__github-link">
+                                <img src="img/github.svg" alt="GitHub logo" class="image footer__icon">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </footer>
     </body>
