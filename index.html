@@ -76,9 +76,7 @@
         <main class="main">
             <section class="hero">
                 <div class="container">
-                    <div class="hero__image-wrap">
-                        <img src="img/me-pic.png" alt="" class="image hero__image">
-                    </div>
+                    <img src="img/me-pic.png" alt="" class="image hero__image">
                     <div class="hero__col2">
                         <h1 class="hero__title">Sara Tébar</h1>
                         <p class="hero__text">Con una sólida experiencia en diseño y una mentalidad analítica, he reconducido mi carrera profesional hacia la creación de soluciones digitales. Mi capacidad para fusionar la creatividad con la funcionalidad me resulta clave a la hora de buscar soluciones prácticas. </p>
@@ -95,29 +93,44 @@
                     <div class="about__col2">
 
                     </div>
-                </div>  TO-DO -->
-            </section>
+                </div>
+            </section>TO-DO -->
             <section class="portfolio" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
                 <div class="container">
-                    <article class="proyecto">
-                        <div class="proyecto__image-wrap">
-                            <a href="https://sa-teal.github.io/monkymail/" target="_blank"><img src="img/proyecto-1.png" alt="" class="image proyecto__image"></a>
-                        </div>
-                        <p><a href="https://sa-teal.github.io/monkymail/" class="button proyecto__button" target="_blank">Ver proyecto</a></p>
-                    </article>
-                    <article class="proyecto">
-                        <div class="proyecto__image-wrap">
-                            <a href="https://sa-teal.github.io/web-rescates/" target="_blank"><img src="img/proyecto-2.png" alt="" class="image proyecto__image"></a>
-                        </div>
-                        <p><a href="https://sa-teal.github.io/web-rescates/" class="button proyecto__button" target="_blank">Ver proyecto</a></p>
-                    </article>
-                    <article class="proyecto">
-                        <div class="proyecto__image-wrap">
-                            <a href="https://buttondown.email/sateal/archive/hola/" target="_blank"><img src="img/proyecto-3.png" alt="" class="image proyecto__image"></a>
-                        </div>
-                        <p><a href="https://buttondown.email/sateal/archive/hola/" class="button proyecto__button" target="_blank">Ver proyecto</a></p>
-                    </article>
+                    <h1 class="portfolio__title">Portfolio</h1>
+                    <p class="portfolio__subtitle">Siéntete libre de inspeccionar el código</p>
+                    <div class="portfolio__items">
+                        <article class="portfolio-item">
+                            <a href="https://sa-teal.github.io/monkymail/" target="_blank" class="link portfolio-item__link">
+                                <img src="img/proyecto-1.png" alt="" class="image portfolio-item__cover">
+                                <div class="portfolio-item__text">
+                                    <h2 class="portfolio-item__title">Monkymail</h2>
+                                    <p class="portfolio-item_summary">Manejo de flex y grid, con tabla de precios. Realizado con SASS.</p>
+                                    <a href="https://sa-teal.github.io/monkymail/" class="link portfolio-item__more" target="_blank">Ver proyecto</a>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="portfolio-item">
+                            <a href="https://sa-teal.github.io/web-rescates/" target="_blank" class="link portfolio-item__link">
+                                <img src="img/proyecto-2.png" alt="" class="image portfolio-item__cover">
+                                <div class="portfolio-item__text">
+                                    <h2 class="portfolio-item__title">Página adopciones</h2>
+                                    <p class="portfolio-item_summary">Landing de protectora</p>
+                                    <a href="https://sa-teal.github.io/web-rescates/" class="link portfolio-item__more" target="_blank">Ver proyecto</a>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="portfolio-item">
+                            <a href="https://buttondown.email/sateal/archive/hola/" target="_blank" class="link portfolio-item__link">
+                                <img src="img/proyecto-3.png" alt="" class="image portfolio-item__cover">
+                                <div class="portfolio-item__text">
+                                    <h2 class="portfolio-item__title">Email leafybox</h2>
+                                    <p class="portfolio-item_summary">Proyecto realizado con mjml y buttondown</p>
+                                    <a href="https://buttondown.email/sateal/archive/hola/" class="link portfolio-item__more" target="_blank">Ver proyecto</a>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </section>
             <section class="contact" id="contact">
@@ -126,6 +139,7 @@
         <footer class="footer">
             <div class="container">
                 <p class="footer__copyright">©2023 sa.teal</p>
+                <a href="" class="footer__github-link"><img src="img/github.svg" alt="GitHub logo" class="image footer__icon"></a>
             </div>
         </footer>
     </body>

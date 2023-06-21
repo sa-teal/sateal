@@ -7,33 +7,48 @@
     display: flex
     flex-direction: column
     align-items: center
-  &__image-wrap
+  &__image
     max-width: 80vw
+    object-position: top
     aspect-ratio: 1
     background: variables.$color__principal
     border-radius: 50%
     overflow: hidden
 
+
 //PORTFOLIO
 .portfolio
-  display: flex
-  flex-direction: column
-  align-items: center
   background-color: variables.$color__fondo
-  padding:
-    top: variables.$gap--m
-    bottom: variables.$gap--m
-  & > .container
+  padding-block: variables.$gap--xl
+  text-align: center
+  &__items
     display: flex
     flex-direction: column
     align-items: center
-    gap: variables.$gap--xl
+    gap: variables.$gap--m
 
-.proyecto
-  &__image-wrap
-    border-radius: variables.$gap--xs
-    overflow: hidden
-    height: 200px
-    border: 1px solid lightgray
-    cursor: pointer
-    transition: .3s
+.portfolio-item
+  border: 1px solid #e5e5e5
+  box-shadow: 0 0 1rem variables.$color__shadow
+  border-radius: variables.$gap--xs
+  overflow: hidden
+  transition: .4s
+  &__cover
+    height: 10rem
+    object-position: top
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: left
+    height: 10rem
+    padding:
+      top: variables.$gap--s
+      bottom: variables.$gap--l
+      left: variables.$gap--l
+      right: variables.$gap--l
+  &__more
+    max-width: fit-content
+    color: variables.$color__principal
+    font-weight: bold
+    border-bottom: 2px solid variables.$color__principal
