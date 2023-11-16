@@ -25,7 +25,9 @@
     display: flex
     flex-direction: column
     align-items: center
-    gap: variables.$gap--m
+    gap: variables.$gap--l
+    margin:
+      top: variables.$gap--l
 
 .portfolio-item
   border: 1px solid #e5e5e5
@@ -33,18 +35,19 @@
   border-radius: variables.$gap--xs
   overflow: hidden
   transition: .4s
+  padding-bottom: variables.$gap--s
   &__cover
     height: 10rem
     object-position: top
+    object-fit: cover
   &__text
     display: flex
     flex-direction: column
     justify-content: space-between
     text-align: left
-    height: 10rem
-    padding:
+    margin:
       top: variables.$gap--s
-      bottom: variables.$gap--l
+      bottom: variables.$gap--s
       left: variables.$gap--l
       right: variables.$gap--l
   &__more
@@ -52,3 +55,5 @@
     color: variables.$color__principal
     font-weight: bold
     border-bottom: 2px solid variables.$color__principal
+  &__link
+    width: 100%

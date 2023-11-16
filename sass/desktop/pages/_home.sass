@@ -64,20 +64,23 @@
   border-radius: variables.$gap--xs
   overflow: hidden
   transition: .4s
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding-bottom: variables.$gap--s
+  &__link
+    width: 100%
   &:hover
     box-shadow: 0 0 2rem variables.$color__shadow
   &__cover
-    height: 11rem
+    height: 12rem
     object-position: top
+    object-fit: cover
   &__text
-    display: flex
-    flex-direction: column
-    justify-content: space-between
     text-align: left
-    height: 10rem
-    padding:
+    margin:
       top: variables.$gap--s
-      bottom: variables.$gap--l
+      bottom: variables.$gap--s
       left: variables.$gap--l
       right: variables.$gap--l
   &__more
