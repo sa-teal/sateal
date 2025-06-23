@@ -1,41 +1,17 @@
 @use "variables"
 
-.hero
-  display: flex
-  align-items: center
-  padding-top: variables.$header__height + 2rem
-  min-height: 40vh
-  & > .container
-    display: flex
-    gap: variables.$gap--xl
-    flex: 1
-    align-items: center
-  &__image-wrap
-    height: 400px
-  &__title
-    font-size: variables.$gap--xl
-  &__text
-    font-size: 1.4rem
-  &__image-wrap
-    height: 400px
 
 //HERO
 .hero
   display: flex
   align-items: center
   padding-top: variables.$header__height + 2rem
-  min-height: 40vh
   & > .container
     display: flex
     gap: variables.$gap--xl
     align-items: center
   &__image
-    object-position: top
-    max-width: 260px
-    aspect-ratio: 1 / 1
-    border-radius: 50%
-    background: variables.$color__principal
-    overflow: hidden
+    border-radius: 24px   
   &__title
     font-size: variables.$gap--xl
   &__text
