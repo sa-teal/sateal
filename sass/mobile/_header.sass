@@ -6,7 +6,6 @@
   right: 0
   top: 0
   background: variables.$color__fondo
-  box-shadow: 0 0 5px variables.$color__shadow
   & > .container
     display: flex
     justify-content: space-between
@@ -22,6 +21,9 @@
     align-items: center
     transform: translateX(-100vw)
     transition: .5s
+    &__toggle
+      border: none
+      background: none
     &--show
       transform: translateX(0vw)
     &__ul

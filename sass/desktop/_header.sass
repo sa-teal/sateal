@@ -6,7 +6,6 @@
   left: 0
   right: 0
   background-color: variables.$color__fondo
-  box-shadow: 0 0 5px variables.$color__shadow
   z-index: 9999
   & > .container
     display: flex
@@ -15,11 +14,13 @@
     align-items: center
   &__logo
     max-width: 10rem
-    padding: variables.$gap--m //quitar cuando active nav
+    //padding: variables.$gap--m //quitar cuando active nav
   &__button
     display: none
   .nav
-    display: none
+    display: block
+    &__toggle
+      display: none
     &__ul
       display: flex
       flex-wrap: wrap

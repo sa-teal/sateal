@@ -317,6 +317,7 @@ body {
 
 body {
   padding: 0;
+  background-color: #fdfdfd;
 }
 
 .link {
@@ -358,7 +359,7 @@ body {
 
 .button {
   display: block;
-  background-color: white;
+  background-color: #fdfdfd;
   border: 2px solid #0007CC;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -376,7 +377,7 @@ body {
   transition: 0.3s;
 }
 .button:hover {
-  color: white;
+  color: #fdfdfd;
   background: #0007CC;
 }
 
@@ -385,9 +386,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  background: white;
-  -webkit-box-shadow: 0 0 5px lightgray;
-          box-shadow: 0 0 5px lightgray;
+  background: #fdfdfd;
 }
 .header > .container {
   display: -webkit-box;
@@ -404,7 +403,7 @@ body {
 .header .nav {
   position: fixed;
   inset: 0;
-  background: white;
+  background: #fdfdfd;
   top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,6 +418,10 @@ body {
           transform: translateX(-100vw);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.header .nav__toggle {
+  border: none;
+  background: none;
 }
 .header .nav--show {
   -webkit-transform: translateX(0vw);
@@ -457,7 +460,7 @@ body {
           align-items: center;
   min-height: 10vh;
   background: #0007CC;
-  color: white;
+  color: #fdfdfd;
   margin-top: 3rem;
 }
 .footer > .container {
@@ -503,7 +506,7 @@ body {
 }
 
 .portfolio {
-  background-color: white;
+  background-color: #fdfdfd;
   padding-block: 3rem;
   text-align: center;
 }
