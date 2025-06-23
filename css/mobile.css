@@ -422,6 +422,7 @@ body {
 .header .nav__toggle {
   border: none;
   background: none;
+  margin-top: 8px;
 }
 .header .nav--show {
   -webkit-transform: translateX(0vw);
@@ -440,7 +441,7 @@ body {
   padding: 1rem;
 }
 .header__logo {
-  width: 10rem;
+  max-height: 2.5rem;
 }
 .header__button {
   display: none;
