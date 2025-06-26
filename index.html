@@ -1,142 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Sara Tebar | Portfolio</title>
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-touch-icon/touch-icon-ipad.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png">
-        <!-- Colores navegador -->
-        <meta name="theme-color" content="#0007CC">
-        <!-- viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <!-- Datos web -->
-        <meta name="author" content="Sara Tébar (sa.teal)">
-        <meta name="keywords" content="html, css, javascript">
-        <meta name="description" content="sa.teal">
-        <!-- Compartir - Redes Sociales -->
-        <meta property="og:image" content="img/miniatura.png">
-        <meta property="og:title" content="sa.teal">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="img/logo.png">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@sa__teal">
-        <meta name="twitter:creator" content="@sa__teal">
-        <meta property="og:image:secure_url" content="img/logo.png">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="400">
-        <meta property="og:image:height" content="300">
-        <meta property="og:image:alt" content="Logo sa.teal">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
-        <!-- Estilos y Normalize -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <!-- alpine -->
-        <script src="https://unpkg.com/alpinejs" defer></script>
-    </head>
-    <body>
-        <header class="header"  x-data="{ open: false }">
-            <div class="container"> 
-                <a class="link header__link" href="">  
-                    <img src="img/logo.png" alt="" class="image header__logo">
-                </a>
-                <button class="nav__toggle" x-on:click="open = ! open"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg></button>
-               <nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
-                    <ul class="ul-reset nav__ul">
-                        <li class="nav__li">
-                            <a href="#" class="nav__link">Inicio</a>
-                        </li>
-                        <li class="nav__li">
-                            <a href="#hero" class="nav__link">Sobre mi</a>
-                        </li>
-                        <li class="nav__li">
-                            <a href="#portfolio" class="nav__link">Portfolio</a>
-                        </li>
-                        <li class="nav__li">
-                            <a href="" class="nav__link">Contacta</a>
-                        </li> 
-                    </ul> 
-                </nav>
-                <button class="menu header__button" aria-hidden="true" @click="open = ! open">
-                    <img
-                            class="image"
-                            :src="open ? 'img/close.png' : 'img/menu.png'"
-                            alt="boton para mostrar u ocultar el menu"
-                    >
-                </button>
-            </div>
-        </header>
-        <!--
-        <main class="main">
-            <section class="hero">
-                <div class="container">
-                     <div class="col-7">
+<head>
+    <meta charset="utf-8">
+    <title>Sara Tebar | Portfolio</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-touch-icon/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png">
+    <!-- Colores navegador -->
+    <meta name="theme-color" content="#0007CC">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Datos web -->
+    <meta name="author" content="Sara Tébar (sa.teal)">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="sa.teal">
+    <!-- Compartir - Redes Sociales -->
+    <meta property="og:image" content="img/miniatura.png">
+    <meta property="og:title" content="sa.teal">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="img/logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sa__teal">
+    <meta name="twitter:creator" content="@sa__teal">
+    <meta property="og:image:secure_url" content="img/logo.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Logo sa.teal">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Estilos y Normalize -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- alpine -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <header class="header" x-data="{ open: false }">
+        <div class="container">
+            <a class="link header__link" href="">
+                <img src="img/logo.png" alt="" class="image header__logo">
+            </a>
+            <button class="nav__toggle" x-on:click="open = ! open"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 12h16" />
+                    <path d="M4 18h16" />
+                    <path d="M4 6h16" />
+                </svg></button>
+            <nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
+                <ul class="ul-reset nav__ul">
+                    <li class="nav__li">
+                        <a href="#" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="#hero" class="nav__link">Sobre mi</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="" class="nav__link">Contacta</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu header__button" aria-hidden="true" @click="open = ! open">
+                <img class="image" :src="open ? 'img/close.png' : 'img/menu.png'"
+                    alt="boton para mostrar u ocultar el menu">
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
                         <h1 class="hero__title">¡Hola! <br>Soy Sara Tébar</h1>
-                        <p class="hero__text">Transformo ideas en productos digitales funcionales, usables y con identidad propia. </p>
+                        <p class="hero__text">Transformo ideas en productos digitales funcionales, usables y con
+                            identidad propia. </p>
                     </div>
                     <img src="img/sara.jpg" alt="" class="image hero__image col-5">
-                   
                 </div>
-            </section>
-            <section class="about" id="about">
-                <h2 class="section__title">Sobre mi</h2>
-                <div class="container">
-                    <div class="about__col1">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2 class="section__title">Sobre mi</h2>
+            <div class="container">
+                <div class="about__col1">
 
-                    </div>
-                    <div class="about__col2">
+                </div>
+                <div class="about__col2">
 
-                    </div>
                 </div>
-            </section>TO-DO 
-            <section class="portfolio" id="portfolio">
-                <div class="container">
-                    <h1 class="portfolio__title">Portfolio</h1>
-                    <p class="portfolio__subtitle">Siéntete libre de inspeccionar el código</p>
-                    <div class="portfolio__items">
-                        <article class="portfolio-item">
-                            <a href="https://sa-teal.github.io/monkymail/" target="_blank" class="link portfolio-item__link">
-                                <img src="img/proyecto-1-monkymail.png" alt="Previsualización de la web monkymail" class="image portfolio-item__cover">
-                                <div class="portfolio-item__text">
-                                    <h2 class="portfolio-item__title">Monkymail</h2>
-                                    <p class="portfolio-item_summary">Manejo de flex y grid, con tabla de precios. Estilos con SASS. Lógica con AlpineJS.</p>
-                                </div>
-                                <a href="https://sa-teal.github.io/monkymail/" class="portfolio-item__text link portfolio-item__more" target="_blank">Ver proyecto</a>
-                            </a>
-                        </article>
-                        <article class="portfolio-item">
-                            <a href="https://buttondown.email/sateal/archive/hola/" target="_blank" class="link portfolio-item__link">
-                                <img src="img/proyecto-3-mailing.png" alt="Previsualización del mailing" class="image portfolio-item__cover">
-                                <div class="portfolio-item__text">
-                                    <h2 class="portfolio-item__title">Email leafybox</h2>
-                                    <p class="portfolio-item_summary">Proyecto realizado con mjml y buttondown</p>
-                                </div>
-                                <a href="https://buttondown.email/sateal/archive/hola/" class="portfolio-item__text link portfolio-item__more" target="_blank">Ver proyecto</a>
-                            </a>
-                        </article>
-                        <article class="portfolio-item">
-                            <a href="http://leafscape.sateal.es/" target="_blank" class="link portfolio-item__link">
-                                <img src="img/proyecto-4-leafscape.png" alt="Previsualización de la web leafscape" class="image portfolio-item__cover">
-                                <div class="portfolio-item__text">
-                                    <h2 class="portfolio-item__title">Tienda Leafscape</h2>
-                                    <p class="portfolio-item_summary">Proyecto final (9.3) para el Master en Diseño Web de Idecrea. Realizado con Wordpress y Elementor.</p>
-                                </div>
-                                <a href="http://leafscape.sateal.es/" class="portfolio-item__text link portfolio-item__more" target="_blank">Ver proyecto</a>
-                            </a>
-                        </article>
-                    </div>
+            </div>
+        </section>TO-DO
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h1 class="portfolio__title">Portfolio</h1>
+                <p class="portfolio__subtitle">Siéntete libre de inspeccionar el código</p>
+                <div class="portfolio__items">
+                    <article class="portfolio-item">
+                        <a href="https://sa-teal.github.io/monkymail/" target="_blank"
+                            class="link portfolio-item__link">
+                            <img src="img/proyecto-1-monkymail.png" alt="Previsualización de la web monkymail"
+                                class="image portfolio-item__cover">
+                            <div class="portfolio-item__text">
+                                <h2 class="portfolio-item__title">Monkymail</h2>
+                                <p class="portfolio-item_summary">Manejo de flex y grid, con tabla de precios. Estilos
+                                    con SASS. Lógica con AlpineJS.</p>
+                            </div>
+                            <a href="https://sa-teal.github.io/monkymail/"
+                                class="portfolio-item__text link portfolio-item__more" target="_blank">Ver proyecto</a>
+                        </a>
+                    </article>
+                    <article class="portfolio-item">
+                        <a href="https://buttondown.email/sateal/archive/hola/" target="_blank"
+                            class="link portfolio-item__link">
+                            <img src="img/proyecto-3-mailing.png" alt="Previsualización del mailing"
+                                class="image portfolio-item__cover">
+                            <div class="portfolio-item__text">
+                                <h2 class="portfolio-item__title">Email leafybox</h2>
+                                <p class="portfolio-item_summary">Proyecto realizado con mjml y buttondown</p>
+                            </div>
+                            <a href="https://buttondown.email/sateal/archive/hola/"
+                                class="portfolio-item__text link portfolio-item__more" target="_blank">Ver proyecto</a>
+                        </a>
+                    </article>
+                    <article class="portfolio-item">
+                        <a href="http://leafscape.sateal.es/" target="_blank" class="link portfolio-item__link">
+                            <img src="img/proyecto-4-leafscape.png" alt="Previsualización de la web leafscape"
+                                class="image portfolio-item__cover">
+                            <div class="portfolio-item__text">
+                                <h2 class="portfolio-item__title">Tienda Leafscape</h2>
+                                <p class="portfolio-item_summary">Proyecto final (9.3) para el Master en Diseño Web de
+                                    Idecrea. Realizado con Wordpress y Elementor.</p>
+                            </div>
+                            <a href="http://leafscape.sateal.es/" class="portfolio-item__text link portfolio-item__more"
+                                target="_blank">Ver proyecto</a>
+                        </a>
+                    </article>
                 </div>
-            </section>
-            <section class="contact" id="contact">
-            </section>
-        </main>
-        
+            </div>
+        </section>
+        <section class="contact" id="contact">
+        </section>
+    </main>
+    <!--
         <footer class="footer">
             <div class="container">
                 <p class="footer__copyright">©2023 sa.teal</p>
@@ -154,5 +173,6 @@
                 </nav>
             </div>
         </footer>-->
-    </body>
+</body>
+
 </html>
