@@ -7,9 +7,12 @@ $gap: 2rem
 .container
   max-width: 1216px
   margin: 0 auto
-  padding-left: $gap / 2
-  padding-right: $gap / 2
+  padding-left: variables.$gap-s
+  padding-right: variables.$gap-s
   width: 100%
+  &--border
+    border-top: 1px solid variables.$accent-500
+    padding-top: variables.$gap-m
 
 // Filas
 .row

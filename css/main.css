@@ -5,6 +5,10 @@
   padding-right: 1rem;
   width: 100%;
 }
+.container--border {
+  border-top: 1px solid #2A54FF;
+  padding-top: 2rem;
+}
 
 .row {
   display: -webkit-box;
@@ -356,12 +360,12 @@
   height: 100%;
 }
 
-.footer {
+.legal {
   background: #2A54FF;
   color: #F7F7F7;
   margin-top: 3rem;
 }
-.footer__icon {
+.legal__icon {
   width: 2rem;
   height: 2rem;
 }

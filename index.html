@@ -32,15 +32,17 @@
     <meta property="og:image:alt" content="Logo sa.teal">
     <!-- Google Fonts -->
     <<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Estilos y Normalize -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <!-- Estilos y Normalize -->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <!-- alpine -->
-    <script src="https://unpkg.com/alpinejs" defer></script>
+        <!-- alpine -->
+        <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
@@ -139,14 +141,14 @@
                             class="link portfolio-item__wrapper">
                             <img src="img/proyecto-1-monkymail.png" alt="Previsualización de la web monkymail"
                                 class="image portfolio-item__cover">
-                                <div class="portfolio-item__text">
-                                    <h3 class="portfolio-item__title">Monkymail</h3>
-                                    <p class="portfolio-item_summary">Manejo de flex y grid, con tabla de precios.
-                                        Estilos
-                                        con SASS. Lógica con AlpineJS.</p>
-                                </div>
-                                <a href="https://sa-teal.github.io/monkymail/"
-                                    class="button button--text portfolio-item__more" target="_blank">Ver proyecto</a>
+                            <div class="portfolio-item__text">
+                                <h3 class="portfolio-item__title">Monkymail</h3>
+                                <p class="portfolio-item_summary">Manejo de flex y grid, con tabla de precios.
+                                    Estilos
+                                    con SASS. Lógica con AlpineJS.</p>
+                            </div>
+                            <a href="https://sa-teal.github.io/monkymail/"
+                                class="button button--text portfolio-item__more" target="_blank">Ver proyecto</a>
                         </a>
                     </article>
                     <article class="portfolio-item col-6">
@@ -155,12 +157,12 @@
                             <img src="img/proyecto-3-mailing.png" alt="Previsualización del mailing"
                                 class="image portfolio-item__cover">
 
-                                <div class="portfolio-item__text">
-                                    <h3 class="portfolio-item__title">Email leafybox</h3>
-                                    <p class="portfolio-item_summary">Proyecto realizado con mjml y buttondown</p>
-                                </div>
-                                <a href="https://buttondown.email/sateal/archive/hola/"
-                                    class="button button--text portfolio-item__more" target="_blank">Ver proyecto</a>
+                            <div class="portfolio-item__text">
+                                <h3 class="portfolio-item__title">Email leafybox</h3>
+                                <p class="portfolio-item_summary">Proyecto realizado con mjml y buttondown</p>
+                            </div>
+                            <a href="https://buttondown.email/sateal/archive/hola/"
+                                class="button button--text portfolio-item__more" target="_blank">Ver proyecto</a>
                         </a>
                     </article>
                     <article class="portfolio-item col-6">
@@ -168,14 +170,14 @@
                             <img src="img/proyecto-4-leafscape.png" alt="Previsualización de la web leafscape"
                                 class="image portfolio-item__cover">
 
-                                <div class="portfolio-item__text">
-                                    <h3 class="portfolio-item__title">Tienda Leafscape</h3>
-                                    <p class="portfolio-item_summary">Proyecto final (9.3) para el Master en Diseño Web
-                                        de
-                                        Idecrea. Realizado con Wordpress y Elementor.</p>
-                                </div>
-                                <a href="http://leafscape.sateal.es/" class="button button--text portfolio-item__more"
-                                    target="_blank">Ver proyecto</a>
+                            <div class="portfolio-item__text">
+                                <h3 class="portfolio-item__title">Tienda Leafscape</h3>
+                                <p class="portfolio-item_summary">Proyecto final (9.3) para el Master en Diseño Web
+                                    de
+                                    Idecrea. Realizado con Wordpress y Elementor.</p>
+                            </div>
+                            <a href="http://leafscape.sateal.es/" class="button button--text portfolio-item__more"
+                                target="_blank">Ver proyecto</a>
                         </a>
                     </article>
                 </div>
@@ -185,23 +187,34 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container container--border">
             <div class="row">
-                <p class="footer__copyright">©2023 sa.teal</p>
-                <nav class="nav">
-                    <ul class="ul-reset nav__ul">
-                        <li class="nav__li">
-                            <a href="https://www.linkedin.com/in/sara-tebar-albir/"
-                                class="nav__link footer__linkedin-link"><img src="img/linkedin.svg" alt="Linkedin logo"
-                                    class="image footer__icon"></a>
-                        </li>
-                        <li class="nav__li">
-                            <a href="https://github.com/sa-teal" class="nav__link footer__github-link">
-                                <img src="img/github.svg" alt="GitHub logo" class="image footer__icon">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="col-12" id="contact">
+                    <h2 class="footer__title">Contacto</h2>
+                    <p class="footer__text">Si quieres ponerte en contacto conmigo no dudes en enviarme un e-mail</p>
+                    <a href="mailto:sateal@sateal.es" class="button button--primary footer__button">Contacta</a>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <div class="container">
+                <div class="row">
+                    <p class="footer__copyright">©2023 sa.teal</p>
+                    <nav class="nav">
+                        <ul class="ul-reset nav__ul">
+                            <li class="nav__li">
+                                <a href="https://www.linkedin.com/in/sara-tebar-albir/"
+                                    class="nav__link footer__linkedin-link"><img src="img/linkedin.svg"
+                                        alt="Linkedin logo" class="image footer__icon"></a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="https://github.com/sa-teal" class="nav__link footer__github-link">
+                                    <img src="img/github.svg" alt="GitHub logo" class="image footer__icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>
