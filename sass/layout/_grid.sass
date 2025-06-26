@@ -1,45 +1,39 @@
 @use "abstracts/variables"
 @use "abstracts/mixins"
 
+$gap: 2rem
+
 // Container
 .container
   max-width: 1216px
-  margin-left: auto
-  margin-right: auto
-  padding-left: 1rem
-  padding-right: 1rem
+  margin: 0 auto
+  padding-left: $gap / 2
+  padding-right: $gap / 2
   width: 100%
 
 // Row
 .row
   display: flex
   flex-wrap: wrap
-  margin-left: -1rem
-  margin-right: -1rem
-  align-items: center
+  gap: $gap
   &--reverse
     flex-direction: row-reverse
 
-// Col base
-.col
-  box-sizing: border-box
-  padding-left: 1rem
-  padding-right: 1rem
-  flex: 0 0 auto
-
-// Cols 1-12
+// Base columns (1–12)
 @for $i from 1 through 12
   .col-#{$i}
-    width: (100% / 12) * $i
+    flex: 0 0 calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
+    max-width: calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
 
-// Responsive cols
-@each $breakpoint in (sm, md, lg)
+// Responsive
+@each $breakpoint, $prefix in (sm: sm, md: md, lg: lg)
   @for $i from 1 through 12
-    .col-#{$breakpoint}-#{$i}
+    .col-#{$prefix}-#{$i}
       +mixins.respond-to(#{$breakpoint})
-        width: (100% / 12) * $i
+        flex: 0 0 calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
+        max-width: calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
 
-// Full width por defecto en móvil
-+mixins.respond-to(sm)
-  .col
-    width: 100%
+// General col padding (matches gap)
+.col
+  padding-left: $gap / 2
+  padding-right: $gap / 2
