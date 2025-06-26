@@ -431,6 +431,32 @@
   height: 100%;
 }
 
+.button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #F7F7F7;
+  background: #2A54FF;
+}
+.button--secondary {
+  background-color: #F7F7F7;
+  border: 2px solid #2A54FF;
+  color: #2A54FF;
+}
 body {
   font-family: "Rubik", sans-serif;
 }
@@ -471,28 +497,4 @@ main {
   list-style: none;
   padding: 0;
   gap: 0.8rem;
-}
-
-.button {
-  display: block;
-  background-color: #F7F7F7;
-  border: 2px solid #2A54FF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 0.4rem;
-  color: #2A54FF;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.button:hover {
-  color: #F7F7F7;
-  background: #2A54FF;
 }
