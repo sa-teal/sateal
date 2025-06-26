@@ -1,13 +1,13 @@
 .container {
   max-width: 1216px;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   width: 100%;
 }
 .container--border {
   border-top: 1px solid #2A54FF;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .row {
@@ -500,6 +500,10 @@ hgroup p {
 }
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
   margin-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
