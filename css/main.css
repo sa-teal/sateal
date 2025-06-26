@@ -628,9 +628,6 @@
 }
 
 .portfolio-item {
-  overflow: hidden;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,10 +635,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 0.8rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 0.8rem;
 }
 .portfolio-item__cover {
   height: 12rem;
@@ -775,7 +772,9 @@ section {
 }
 .portfolio__archive {
   padding-top: 2rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
