@@ -1,0 +1,27 @@
+@use "abstracts/variables"
+
+.light-switch
+  position: fixed
+  bottom: 2rem
+  right: 2rem
+  width: 3rem
+  height: 3rem
+  background-color: #fff
+  color: variables.$text-light
+  border: none
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+  cursor: pointer
+  transition: background-color 0.3s ease, transform 0.2s ease
+  z-index: 9999
+
+  &:hover
+    background-color: variables.$button-hover
+    transform: scale(1.1)
+
+  svg
+    width: 1.5rem
+    height: 1.5rem

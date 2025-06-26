@@ -45,23 +45,25 @@
     <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
-<body>
+<body x-data="{ darkMode: false }" :class="{ 'dark-mode': darkMode }">
     <header class="header" x-data="{ open: false }">
         <div class="container">
             <a class="link header__link" href="">
-                <img src="img/logo.png" alt="" class="image header__logo">
+                <img src="img/logo.png" alt="Logo de Sara Tébar" class="image header__logo">
             </a>
-            <button class="nav__toggle" x-on:click="open = ! open"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+            <button class="nav__toggle" x-on:click="open = ! open" aria-expanded="false" aria-controls="menu"
+                :aria-expanded="open.toString()" aria-label="Abrir o cerrar menú de navegación">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu">
                     <path d="M4 12h16" />
                     <path d="M4 18h16" />
                     <path d="M4 6h16" />
                 </svg></button>
-            <nav class="nav" x-bind:class="! open ? '' : 'nav--show'">
+            <nav class="nav" x-bind:class="! open ? '' : 'nav--show'" role="navigation" aria-label="Menú principal">
                 <ul class="ul-reset nav__ul">
                     <li class="nav__li">
-                        <a href="#" class="nav__link">Inicio</a>
+                        <a href="#" class="nav__link" aria-current="page">Inicio</a>
                     </li>
                     <li class="nav__li">
                         <a href="#about" class="nav__link">Sobre mi</a>
@@ -95,7 +97,7 @@
                         </div>
 
                     </div>
-                    <img src="img/sara.jpg" alt="" class="image hero__image col-5">
+                    <img src="img/sara.jpg" alt="Retrato de Sara Tébar" class="image hero__image col-5">
                 </div>
             </div>
         </section>
@@ -185,6 +187,20 @@
         <section class="contact" id="contact">
         </section>
     </main>
+
+<!-- Botón flotante -->
+<button
+  class="light-switch"
+  x-on:click="darkMode = !darkMode"
+  :aria-label="darkMode ? 'Modo claro' : 'Modo oscuro'"
+>
+  <template x-if="!darkMode">
+    <img src="img/lightbulb.svg"  alt="Una bombilla que representa el modo oscuro">
+  </template>
+  <template x-if="darkMode">
+   <img src="img/lightbulb-off.svg"  alt="Una bombilla que representa el modo claro">
+  </template>
+</button>
 
     <footer class="footer">
         <div class="container container--border">
