@@ -560,6 +560,16 @@
   height: 100%;
 }
 
+.footer {
+  background: #2A54FF;
+  color: #F7F7F7;
+  margin-top: 3rem;
+}
+.footer__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
 .button {
   display: block;
   width: -webkit-fit-content;
