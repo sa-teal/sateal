@@ -397,6 +397,7 @@
 .button--primary:hover {
   background-color: #3C52C8;
   border-color: #3C52C8;
+  color: #F7F7F7;
 }
 .button--secondary {
   background-color: #F7F7F7;
@@ -406,6 +407,7 @@
 .button--secondary:hover {
   background-color: #2A54FF;
   border-color: #3C52C8;
+  color: #F7F7F7;
 }
 .button--text {
   color: #2A54FF;
