@@ -88,7 +88,11 @@
                         <h1 class="hero__title">¡Hola! <br>Soy Sara Tébar</h1>
                         <p class="hero__text">Transformo ideas en productos digitales funcionales, usables y con
                             identidad propia. </p>
-                        <a class="button button--primary" href="#portfolio">Ver portfolio</a>
+                        <div class="hero__buttons">
+                            <a class="button button--primary" href="#portfolio">Ver portfolio</a>
+                            <a class="button button--secondary" href="#portfolio">Contacto</a>
+                        </div>
+
                     </div>
                     <img src="img/sara.jpg" alt="" class="image hero__image col-5">
                 </div>
@@ -110,8 +114,10 @@
                         Me interesa especialmente el punto en el que el diseño y el código se encuentran. Disfruto
                         creando soluciones visuales claras, ordenadas y funcionales. Valoro la estética, pero también la
                         estructura y la lógica.
-                        Actualmente trabajo con tecnologías como <b>WordPress, PHP, HTML, CSS </b>(Tailwind, Bootsrap, SASS),
-                        jQuery, JavaScript y Git. También tengo nociones de <b>Java, Python y SQL,</b> y sigo aprendiendo cada
+                        Actualmente trabajo con tecnologías como <b>WordPress, PHP, HTML, CSS </b>(Tailwind, Bootsrap,
+                        SASS),
+                        jQuery, JavaScript y Git. También tengo nociones de <b>Java, Python y SQL,</b> y sigo
+                        aprendiendo cada
                         día. Mi objetivo es crecer como desarrolladora front-end sin perder de vista el enfoque humano,
                         accesible y visual del diseño.
                     </div>
@@ -124,11 +130,11 @@
                     <div class="col-12">
                         <hgroup class="portfolio__header">
                             <h2 class="portfolio__title">Portfolio</h2>
-                    <p class="portfolio__subtitle">Siéntete libre de inspeccionar el código</p>
+                            <p class="portfolio__subtitle">Siéntete libre de inspeccionar el código</p>
                         </hgroup>
-                    
+                    </div>
                 </div>
-                <div class="row">
+                <div class="row portfolio__archive">
                     <article class="portfolio-item col-4">
                         <a href="https://sa-teal.github.io/monkymail/" target="_blank"
                             class="link portfolio-item__link">
@@ -140,7 +146,7 @@
                                     con SASS. Lógica con AlpineJS.</p>
                             </div>
                             <a href="https://sa-teal.github.io/monkymail/"
-                               class="button button--text portfolio-item__more" target="_blank">Ver proyecto</a>
+                                class="button button--text portfolio-item__more" target="_blank">Ver proyecto</a>
                         </a>
                     </article>
                     <article class="portfolio-item col-4">
@@ -170,20 +176,21 @@
                         </a>
                     </article>
                 </div>
-            </div>
         </section>
         <section class="contact" id="contact">
         </section>
     </main>
-    
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
                 <p class="footer__copyright">©2023 sa.teal</p>
                 <nav class="nav">
                     <ul class="ul-reset nav__ul">
                         <li class="nav__li">
-                            <a href="https://www.linkedin.com/in/sara-tebar-albir/" class="nav__link footer__linkedin-link"><img src="img/linkedin.svg" alt="Linkedin logo" class="image footer__icon"></a>
+                            <a href="https://www.linkedin.com/in/sara-tebar-albir/"
+                                class="nav__link footer__linkedin-link"><img src="img/linkedin.svg" alt="Linkedin logo"
+                                    class="image footer__icon"></a>
                         </li>
                         <li class="nav__li">
                             <a href="https://github.com/sa-teal" class="nav__link footer__github-link">
@@ -192,9 +199,9 @@
                         </li>
                     </ul>
                 </nav>
-                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>

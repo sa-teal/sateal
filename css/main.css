@@ -763,7 +763,19 @@ section {
 .hero__text {
   font-size: 1.4rem;
 }
+.hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+}
 
 .portfolio__header {
   text-align: center;
+}
+.portfolio__archive {
+  padding-top: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
