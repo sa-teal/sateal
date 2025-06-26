@@ -553,6 +553,7 @@ section {
 
 .hero__image {
   border-radius: 2rem;
+  padding: 0;
 }
 .hero__title {
   font-size: 3rem;
