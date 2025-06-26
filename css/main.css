@@ -720,6 +720,11 @@ main {
   padding-top: 6rem;
 }
 
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .link {
   display: inline-block;
   color: inherit;
@@ -757,4 +762,8 @@ main {
 }
 .hero__text {
   font-size: 1.4rem;
+}
+
+.portfolio__header {
+  text-align: center;
 }
