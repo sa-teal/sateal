@@ -16,14 +16,30 @@
         right: variables.$gap--l
     transition: .3s
     &--primary
-
+        background-color: variables.$button-default
+        border: 2px solid variables.$color__principal
+        color: variables.$text-light
+        &:hover
+            background-color: variables.$button-hover
+            border-color: variables.$button-hover
     &--secondary
         background-color: variables.$color__fondo
-        border: 2px solid variables.$color__principal
-        color: variables.$color__principal
-    &:hover
-    color: variables.$color__fondo
-    background: variables.$color__principal
+        border: 2px solid variables.$button-default
+        color: variables.$button-default
+        &:hover
+            background-color: variables.$button-default
+            border-color: variables.$button-hover
+    &--text
+        color: variables.$button-default
+        font-size: variables.$font-size__base
+        font-weight: normal
+        padding: 0
+        display: flex
+        &::after
+            content: url('../../img/chevron-right.svg')
+            height: 100%
+           
+
 
   
 

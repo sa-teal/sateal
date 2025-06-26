@@ -1,35 +1,18 @@
 @use "abstracts/variables"
 
 .portfolio-item
-    border: 1px solid #e5e5e5
-    border-radius: variables.$gap--xs
     overflow: hidden
     transition: .4s
     display: flex
     flex-direction: column
     justify-content: space-between
     padding-bottom: variables.$gap--s
-    &__link
-        width: 100%
-        &:hover
-        box-shadow: 0 0 2rem variables.$color__shadow
     &__cover
         height: 12rem
-        object-position: top
-        object-fit: cover
-    &__text
-        text-align: left
-        margin:
-            top: variables.$gap--s
-            bottom: variables.$gap--s
-            left: variables.$gap--l
-            right: variables.$gap--l
-    &__more
-        max-width: fit-content
-        color: variables.$color__principal
-        font-weight: bold
-        border-bottom: 2px solid white
-        transition: .3s
-        &:hover
-            border-bottom: 2px solid variables.$color__principal
+        width: 100%
+        height: 300px
+        border-radius: variables.$gap--xs
+ 
+       
+    
 
