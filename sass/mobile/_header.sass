@@ -1,32 +1,14 @@
 @use "variables"
 
 .header
-  position: fixed
-  left: 0
-  right: 0
-  top: 0
-  background: variables.$color__fondo
+
   & > .container
-    display: flex
-    justify-content: space-between
-    align-items: center
+  
     padding: 1rem
   .nav
-    position: fixed
-    inset: 0
-    background: variables.$color__fondo
-    top: variables.$header__height
-    display: flex
-    justify-content: center
-    align-items: center
-    transform: translateX(-100vw)
-    transition: .5s
+  
     &__toggle
-      border: none
-      background: none
-      margin-top: 8px
-    &--show
-      transform: translateX(0vw)
+      
     &__ul
       list-style: none
       padding: 0
@@ -37,8 +19,7 @@
       color: variables.$color__texto
       font-size: variables.$gap--l
       padding: variables.$gap--m
-  &__logo
-    max-height: 2.5rem
+
   &__button
     display: none
     width: 2rem

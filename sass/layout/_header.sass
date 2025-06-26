@@ -12,6 +12,9 @@
     justify-content: space-between
     gap: variables.$gap--m
     align-items: center
+    +respond-to(sm)
+      padding: 1rem auto
+      height: variables.$header__height
   &__logo
     max-height: 2.5rem
     //padding: variables.$gap--m //quitar cuando active nav
@@ -19,13 +22,34 @@
     display: none
   .nav
     display: block
+    +respond-to(sm)
+      position: fixed
+      inset: 0
+      background: variables.$color__fondo
+      top: variables.$header__height
+      display: flex
+      justify-content: center
+      align-items: center
+      transform: translateX(-100vw)
+      transition: .5s
     &__toggle
       display: none
+      +respond-to(sm)
+        display: block
+        border: none
+        background: none
+        margin-top: 8px
+    &--show
+      +respond-to(sm)
+        transform: translateX(0vw)
     &__ul
       display: flex
       flex-wrap: wrap
       list-style: none
       padding: 0
+      +respond-to(sm)
+        flex-direction: column
+        text-align: center
     &__link
       display: inline-block
       text-decoration: none
@@ -37,3 +61,15 @@
       &:hover
         color: lighten(variables.$color__texto, 50%)
         border-bottom: 1px solid lighten(variables.$color__texto, 50%)
+      +respond-to(sm)
+        display: block
+        text-decoration: none
+        color: variables.$color__texto
+        font-size: variables.$gap--l
+        padding: variables.$gap--m
+  &__button
+    display: none
+    width: 2rem
+    padding: 0
+    .image
+      height: 100%
