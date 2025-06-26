@@ -11,15 +11,22 @@ $gap: 2rem
   padding-right: $gap / 2
   width: 100%
 
-// Row
+// Filas
 .row
   display: flex
   flex-wrap: wrap
+  align-items: center
   gap: $gap
   &--reverse
     flex-direction: row-reverse
 
-// Base columns (1–12)
+// Columnas
+.col
+  padding-left: $gap / 2
+  padding-right: $gap / 2
+  height: min-content
+
+
 @for $i from 1 through 12
   .col-#{$i}
     flex: 0 0 calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
@@ -33,7 +40,3 @@ $gap: 2rem
         flex: 0 0 calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
         max-width: calc(#{percentage($i / 12)} - (#{$gap} * (#{12 - $i} / 12)))
 
-// General col padding (matches gap)
-.col
-  padding-left: $gap / 2
-  padding-right: $gap / 2

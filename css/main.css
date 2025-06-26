@@ -12,6 +12,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
 }
 .row--reverse {
@@ -19,6 +22,14 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.col {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .col-1 {
@@ -427,11 +438,6 @@
             flex: 0 0 calc(100% - 2rem * 0 / 12);
     max-width: calc(100% - 2rem * 0 / 12);
   }
-}
-
-.col {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .header {
