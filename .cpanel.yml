@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sateales/public_html/portfolio/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -r img $DEPLOYPATH
-    - /bin/cp -r css $DEPLOYPATH
+    - /bin/cp /home/sateales/repositories/portfolio/index.html $DEPLOYPATH
+    - /bin/cp -r /home/sateales/repositories/portfolio/img $DEPLOYPATH
+    - /bin/cp -r /home/sateales/repositories/portfolio/css $DEPLOYPATH
